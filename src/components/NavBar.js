@@ -37,6 +37,17 @@ class NavBar extends Component {
                 >
                     Comment Form
                 </NavLink>
+                                <NavLink
+                    to="/comments" 
+                    exact
+                    style={link}
+                    activeStyle={{
+                        background: 'purple'
+                    }}
+                
+                >
+                    Comments
+                </NavLink>
             </div>
         )
     }
