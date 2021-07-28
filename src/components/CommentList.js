@@ -2,16 +2,18 @@ import React, { Component } from 'react'
 import data from './../data'
 
 
-const comments = data.comments;
-
 class CommentList extends Component {
-    render(){
-        return (
-            <ul>
-                {comments.map(s => (<li>{s}</li>))}
-            </ul>
-        )
+    render () {
+      const elem = data.comments;
+
+      return (
+       <ul>
+         {Object.keys(elem).map(s => (<li>{s}</li>))}
+       </ul>
+      )
     }
-}
+  };
 
 export default CommentList
+
+
