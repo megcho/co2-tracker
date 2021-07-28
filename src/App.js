@@ -1,23 +1,9 @@
-import React, { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
+import React, { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import './App.css'
 import Home from './components/Home'
 import CommentForm from './components/comment-form/CommentForm'
 import NavBar from './components/NavBar'
 import CommentList from './components/CommentList'
-
-// class App extends Component {
-
-//     render( ) {
-//         return (
-//             <div className="App">
-//             <Home />
-//             </div>
-//         );
-//     }
-// }
-
-// export default App;
-
 
 function App() {
   return (
@@ -36,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

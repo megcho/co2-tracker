@@ -1,21 +1,21 @@
 import React, { Component } from 'react'
-import './commentform.css';
+import './commentform.css'
 
 class CommentForm extends Component {
   handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("submitted");
+    e.preventDefault()
+    console.log("submitted")
 
-    const body = e.target.body.value;
+    const body = e.target.comment.value
 
     fetch("http://localhost:3000/comments", {
       method: "POST",
       body: JSON.stringify(body)
     }).then((response) => {
-      console.log(response);
-      return response.json(); // do something with response JSON
-    });
-  };
+      console.log(response)
+      return response.json() // do something with response JSON
+    })
+  }
 
   render() {
     return (
@@ -24,7 +24,7 @@ class CommentForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <label>Answer: </label>
           <br />
-          <textarea type="text" name="body" />
+          <textarea type="text" name="comment" />
           <br />
           <input type="submit" />
         </form>

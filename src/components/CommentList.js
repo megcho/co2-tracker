@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import data from './../data'
+import data from './../db'
 
 
 class CommentList extends Component {
     render () {
-      const elem = data.comments;
+      const elem = data.comments
 
       return (
         <div>
@@ -12,7 +12,7 @@ class CommentList extends Component {
         </div>
         )
     }
-};
+}
 
 export default CommentList
 

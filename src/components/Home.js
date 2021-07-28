@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Select from './select/Select';
-import BreedImage from './breed-image/BreedImage';
+import React, { Component } from 'react'
+import Select from './select/Select'
+import BreedImage from './breed-image/BreedImage'
 
 class Home extends Component {
     state= {
@@ -9,13 +9,13 @@ class Home extends Component {
         error: false
     }
    componentDidMount() {
-       this.fetchAllBreeds();
+       this.fetchAllBreeds()
    }
    fetchAllBreeds = async () => {
        try { //try to get data
-        const response = await fetch('https://dog.ceo/api/breeds/list/all');
+        const response = await fetch('https://dog.ceo/api/breeds/list/all')
         if (response.ok) { // check if status code is 200
-            const data = await response.json();
+            const data = await response.json()
             this.setState({
                 breedsList: Object.keys(data.message)
             })
@@ -38,15 +38,15 @@ class Home extends Component {
            })
        }
     render( ) {
-        console.log(this.state.selectedBreed);
+        console.log(this.state.selectedBreed)
         return (
             <div className="App">
             <h1>Doggo Generator!</h1>
                 <Select breedsList={this.state.breedsList} onSelect={this.selectHandler} isError={this.state.error}/>
                 <BreedImage breed={this.state.selectedBreed}/>
             </div>
-        );
+        )
     }
 }
 
-export default Home;
+export default Home
