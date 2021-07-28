@@ -8,7 +8,7 @@ class CommentList extends Component {
 
       return (
        <ul>
-         {Object.keys(elem).map(s => (<li>{s}</li>))}
+         {elem.map(s => (<li>{s.text}</li>))}
        </ul>
       )
     }
