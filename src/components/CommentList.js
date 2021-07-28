@@ -7,12 +7,12 @@ class CommentList extends Component {
       const elem = data.comments;
 
       return (
-       <ul>
-         {elem.map(s => (<li>{s.text}</li>))}
-       </ul>
-      )
+        <div>
+          {elem.map(s => (<ul>{s.text}</ul>))}
+        </div>
+        )
     }
-  };
+};
 
 export default CommentList
 
