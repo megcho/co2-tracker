@@ -38,7 +38,7 @@ class NavBar extends Component {
                     Comment Form
                 </NavLink>
                                 <NavLink
-                    to="/comments" 
+                    to="/commentlist" 
                     exact
                     style={link}
                     activeStyle={{

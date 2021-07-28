@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Select from './select/Select';
 import BreedImage from './breed-image/BreedImage';
-import CommentForm from './comment-form/CommentForm'
 
 class Home extends Component {
     state= {

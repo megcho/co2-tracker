@@ -1,1 +1,0 @@
-// This is where we will display the comments submitted via the comment form
