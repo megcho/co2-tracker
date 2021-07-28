@@ -26,10 +26,10 @@ class CommentForm extends Component {
           <br />
           <textarea type="text" name="comment" />
           <br />
-          <input type="submit" />
+          <button type="reset">Submit</button>
         </form>
       </div>
-    );
+    )
   }
 }
 
