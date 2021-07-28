@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './commentform.css'
 
 class CommentForm extends Component {
   handleSubmit = (e) => {
