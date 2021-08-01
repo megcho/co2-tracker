@@ -26,7 +26,7 @@ class BreedImage extends Component {
   render() {
     return (
       <div className="image-container">
-        <img className="image-card" alt="dog" src={this.state.imageUrl} />
+        <img className="image-card" src={this.state.imageUrl} />
       </div>
     )
   }

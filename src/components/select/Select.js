@@ -1,10 +1,10 @@
-import React from 'react';
-import './select.css';
+import React from 'react'
+import './select.css'
 
 const Select = (props) => {
     
-    const handleChange = (event) => {
-        props.onSelect(event.target.value);
+    const handleChange = (e) => {
+        props.onSelect(e.target.value)
     }
     const getLoadingView = () => {
         return <div className="loading"><img className="loading-gif" alt="Loading..." src={require('../../assets/loading.gif')}/></div>
@@ -28,7 +28,7 @@ const Select = (props) => {
         {props.breedsList ? getSelectView() : getLoadingView()}
         {props.isError ? getErrorView() : null}
         </div>
-    );
+    )
 }
 
-export default Select;
+export default Select

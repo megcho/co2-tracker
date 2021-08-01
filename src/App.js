@@ -1,7 +1,7 @@
 import React, { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import './App.css'
 import Home from './components/Home'
-import CommentForm from './components/comment-form/CommentForm'
+import CommentForm from './components/CommentForm'
 import NavBar from './components/NavBar'
 import CommentList from './components/CommentList'
 

@@ -5,7 +5,7 @@ class CommentForm extends Component {
     e.preventDefault()
     console.log("submitted")
 
-    const body = e.target.comment.value
+    const body = e.target.value
 
     fetch("http://localhost:3000/comments", {
       method: "POST",
